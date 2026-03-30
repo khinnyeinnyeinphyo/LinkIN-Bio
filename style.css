@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #0f1015; /* အမှောင်ရောင် Background */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 0.95rem;
+    opacity: 0.6;
+    margin-bottom: 35px;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 16px 25px;
+    border-radius: 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+}
+
+/* Hover ရောက်ရင် အရောင်ပြောင်းမယ့်အပိုင်း */
+
+/* Facebook - Blue */
+.link-card.fb:hover {
+    background: rgba(24, 119, 242, 0.2);
+    border-color: #1877f2;
+    box-shadow: 0 0 15px rgba(24, 119, 242, 0.4);
+}
+
+/* TikTok - Neon Pink/Cyan vibe */
+.link-card.tt:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #ff0050;
+    box-shadow: 0 0 15px rgba(255, 0, 80, 0.4);
+}
+
+/* Telegram - Sky Blue */
+.link-card.tg:hover {
+    background: rgba(0, 136, 204, 0.2);
+    border-color: #0088cc;
+    box-shadow: 0 0 15px rgba(0, 136, 204, 0.4);
+}
+
+/* YouTube - Red */
+.link-card.yt:hover {
+    background: rgba(255, 0, 0, 0.2);
+    border-color: #ff0000;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
+}
+
+.link-card i {
+    font-size: 1.4rem;
+    width: 25px;
+}
